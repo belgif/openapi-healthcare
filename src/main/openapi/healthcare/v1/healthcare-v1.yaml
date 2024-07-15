@@ -9,4 +9,7 @@ servers: []
 paths: {}
 components:
   schemas:
-    {}
+    NihdiNumber:
+      description: Identification number attributed by NIHDI (RIZIV-INAMI) to health care providers in Belgium within the framework of the compulsory health insurance
+      type: string
+      pattern: '^\d{8}$'
