@@ -18,7 +18,7 @@
       <plugin>
         <groupId>io.github.belgif.rest.guide.validator</groupId>
         <artifactId>belgif-rest-guide-validator-maven-plugin</artifactId>
-        <version>2.2.1</version> <!-- update this to the latest version -->
+        <version>2.2.1</version>
         <executions>
           <execution>
             <goals>
@@ -29,7 +29,6 @@
         <configuration>
           <files>
             <file>src/main/openapi/healthcare/v1/healthcare-v1.yaml</file>
-            <file>src/main/swagger/healthcare/v1/healthcare-v1.yaml</file>
           </files>
         </configuration>
       </plugin>
@@ -47,7 +46,6 @@
             <configuration>
               <appendAssemblyId>true</appendAssemblyId>
               <descriptors>
-                <descriptor>src/main/assembly/swagger.xml</descriptor>
                 <descriptor>src/main/assembly/openapi.xml</descriptor>
               </descriptors>
             </configuration>
