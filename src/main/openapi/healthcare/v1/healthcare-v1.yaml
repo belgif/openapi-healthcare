@@ -13,3 +13,8 @@ components:
       description: Identification number attributed by NIHDI (RIZIV-INAMI) to health care providers in Belgium within the framework of the compulsory health insurance
       type: string
       pattern: '^\d{8}$'
+    NihdiCompetenceCode:
+      description: Code assigned by NIHDI to identify the recognized profession of a healthcare provider
+      type: string
+      pattern: '^\d{3}$'
+      example: "003"
